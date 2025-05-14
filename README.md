@@ -24,30 +24,26 @@ LIRR: % of Comparable Pre-Pandemic Day     The daily ridership estimate as a per
 
 Metro-North: Total Estimated Ridership     The daily total estimated Metro-North ridership. Blank value indicates that the ridership data was not or is not currently available or applicable.                                                              metro_north_total_estimated_ridership   Number
 
-Metro-North: % of Comparable Pre-Pandemic Day The daily ridership estimate as a percentage of Metro-North ridership on an equivalent day prior to the COVID-19 pandemic.
-metro_north_of_comparable_pre_pandemic_day
-Number
-Access-A-Ride: Total Scheduled Trips
-The daily total scheduled Access-A-Ride trips. Blank value indicates that the ridership data was not or is not currently available or applicable.
-access_a_ride_total_scheduled_trips
-Number
-Access-A-Ride: % of Comparable Pre-Pandemic Day
-The daily total scheduled trips as a percentage of total scheduled trips on an equivalent day prior to the COVID-19 pandemic. Blank value indicates that the ridership data was not or is not currently available or applicable.
-access_a_ride_of_comparable_pre_pandemic_day
-Number
-Bridges and Tunnels: Total Traffic
-The daily total Bridges and Tunnels traffic. Blank value indicates that the ridership data was not or is not currently available or applicable.
-bridges_and_tunnels_total_traffic
-Number
-Bridges and Tunnels: % of Comparable Pre-Pandemic Day
-The daily total traffic as a percentage of total traffic on an equivalent day prior to the COVID-19 pandemic. Blank value indicates that the ridership data was not or is not currently available or applicable.
-bridges_and_tunnels_of_comparable_pre_pandemic_day
-Number
-Staten Island Railway: Total Estimated Ridership
-The daily total estimated SIR ridership.
-staten_island_railway_total_estimated_ridership
-Number
-Staten Island Railway: % of Comparable Pre-Pandemic Day
-The daily ridership estimate as a percentage of SIR ridership on an equivalent day prior to the COVID-19 pandemic.
-staten_island_railway_of_comparable_pre_pandemic_day
-Number
+Metro-North: % of Comparable Pre-Pandemic Day The daily ridership estimate as a percentage of Metro-North ridership on an equivalent day prior to the COVID-19 pandemic.                                                                                    metro_north_of_comparable_pre_pandemic_day Number
+
+
+Access-A-Ride: Total Scheduled Trips       The daily total scheduled Access-A-Ride trips. Blank value indicates that the ridership data was not or is not currently available or applicable.                                                              access_a_ride_total_scheduled_trips      Number
+
+Access-A-Ride: % of Comparable Pre-Pandemic Day   The daily total scheduled trips as a percentage of total scheduled trips on an equivalent day prior to the COVID-19 pandemic.                                                                              access_a_ride_of_comparable_pre_pandemic_day   Number
+
+Bridges and Tunnels: Total Traffic         The daily total Bridges and Tunnels traffic.         bridges_and_tunnels_total_traffic         Number
+
+Bridges and Tunnels: % of Comparable Pre-Pandemic Day    The daily total traffic as a percentage of total traffic on an equivalent day prior to the COVID-19 pandemic.                                                                                       bridges_and_tunnels_of_comparable_pre_pandemic_day
+                                                                                                                                          Number
+
+Staten Island Railway: Total Estimated Ridership   The daily total estimated SIR ridership.    staten_island_railway_total_estimated_ridership   Number
+
+Staten Island Railway: % of Comparable Pre-Pandemic Day   The daily ridership estimate as a percentage of SIR ridership on an equivalent day prior to the COVID-19 pandemic.                                                                             staten_island_railway_of_comparable_pre_pandemic_day    Number
+
+
+## Executive Summary
+### Data Cleaning Steps
+While viewing the data I noticed there was a date column which contained the month, day of the month and year in number form. Since I wanted to complete analysis for each of these I created a function that extracted the month, day of the month and year and created a column for Month, Year and Day of Week using (dt) dateeime functions. This changed the dtypes for month and day of week to objects making it easier to use within my analysis. 
+
+### Key Visualizations
+Include key visualizations that highlight important aspects of the data. Use graphs, charts, or any other visual representation to make your points.
